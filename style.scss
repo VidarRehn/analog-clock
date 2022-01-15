@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .digital {
+        height: 80px;
+        width: 200px;
+        background-color: rgb(220, 220, 220);
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .clock {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: rgb(220, 220, 220);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .hour-mark {
+            height: 400px;
+            width: 5px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hour-mark::before {
+            content: "";
+            height: 20px;
+            width: 5px;
+            background-color: black;
+        }
+
+        .hour-mark::after {
+            content: "";
+            height: 20px;
+            width: 5px;
+            background-color: black;
+        }
+
+        .minute-mark {
+            height: 400px;
+            width: 2px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .minute-mark::before {
+            content: "";
+            height: 10px;
+            width: 2px;
+            background-color: black;
+        }
+
+        .minute-mark::after {
+            content: "";
+            height: 10px;
+            width: 2px;
+            background-color: black;
+        }
+
+        .inner-circle {
+            height: 320px;
+            width: 320px;
+            border-radius: 50%;
+            align-self: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .hour-hand {
+                height: 100%;
+                width: 5px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    
+            .hour-hand::after {
+                content: "";
+                height: 50%;
+                width: 5px;
+                background-color: black;
+                position: absolute;
+            }
+    
+            .minute-hand {
+                height: 100%;
+                width: 3px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    
+            .minute-hand::after {
+                content: "";
+                height: 50%;
+                width: 3px;
+                background-color: black;
+                position: absolute;
+            }
+    
+            .second-hand {
+                height: 100%;
+                width: 2px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    
+            .second-hand::after {
+                content: "";
+                height: 50%;
+                width: 2px;
+                background-color: black;
+                position: absolute;
+            }
+
+        }
+
+    }
+}

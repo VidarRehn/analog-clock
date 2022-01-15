@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .digital {
+  height: 80px;
+  width: 200px;
+  background-color: gainsboro;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+}
+
+.wrapper .clock {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: gainsboro;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .clock .hour-mark {
+  height: 400px;
+  width: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .clock .hour-mark::before {
+  content: "";
+  height: 20px;
+  width: 5px;
+  background-color: black;
+}
+
+.wrapper .clock .hour-mark::after {
+  content: "";
+  height: 20px;
+  width: 5px;
+  background-color: black;
+}
+
+.wrapper .clock .minute-mark {
+  height: 400px;
+  width: 2px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .clock .minute-mark::before {
+  content: "";
+  height: 10px;
+  width: 2px;
+  background-color: black;
+}
+
+.wrapper .clock .minute-mark::after {
+  content: "";
+  height: 10px;
+  width: 2px;
+  background-color: black;
+}
+
+.wrapper .clock .inner-circle {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .clock .inner-circle .hour-hand {
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .clock .inner-circle .hour-hand::after {
+  content: "";
+  height: 50%;
+  width: 5px;
+  background-color: black;
+  position: absolute;
+}
+
+.wrapper .clock .inner-circle .minute-hand {
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .clock .inner-circle .minute-hand::after {
+  content: "";
+  height: 50%;
+  width: 3px;
+  background-color: black;
+  position: absolute;
+}
+
+.wrapper .clock .inner-circle .second-hand {
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .clock .inner-circle .second-hand::after {
+  content: "";
+  height: 50%;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
