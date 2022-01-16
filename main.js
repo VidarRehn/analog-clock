@@ -56,49 +56,23 @@ let hourHand = document.createElement("div");
 hourHand.classList.add("hour-hand");
 innerClock.append(hourHand);
 
-function moveHourhand(){
-    let today = new Date();
-    let hour = today.getHours();
-    hour = hour % 12;
-    hourHand.style.transform = `rotate(${(hour * 30)}deg)`
-}
-
-setInterval(moveHourhand, 1000);
-
-
-// minute-hand 
-
 let minuteHand = document.createElement("div");
 minuteHand.classList.add("minute-hand");
 innerClock.append(minuteHand);
-
-function moveMinuteHand(){
-    let today = new Date();
-    let minute = today.getMinutes();
-    minuteHand.style.transform = `rotate(${minute * 6}deg)`
-}
-
-setInterval(moveMinuteHand, 1000);
-
-// second-hand
 
 let secondHand = document.createElement("div");
 secondHand.classList.add("second-hand");
 innerClock.append(secondHand);
 
-function moveSecondHand(){
-    let today = new Date();
-    let second = today.getSeconds();
-    secondHand.style.transform = `rotate(${second * 6}deg)`;
-}
-
-setInterval(moveSecondHand, 1000);
-
 function moveHands(){
     let today = new Date();
     let hour = today.getHours()
     hour = hour % 12;
+    hourHand.style.transform = `rotate(${(hour * 30)}deg)`
     let minute = today.getMinutes();
+    minuteHand.style.transform = `rotate(${minute * 6}deg)`
     let second = today.getSeconds();
-
+    secondHand.style.transform = `rotate(${second * 6}deg)`;
 }
+
+setInterval(moveHands, 1000);
