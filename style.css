@@ -39,6 +39,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 40px;
+  border: 8px solid black;
 }
 
 .wrapper .clock {
@@ -119,8 +120,8 @@
 }
 
 .wrapper .clock .inner-circle {
-  height: 320px;
-  width: 320px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   -ms-flex-item-align: center;
       align-self: center;
@@ -211,6 +212,27 @@
   height: 50%;
   width: 2px;
   background-color: black;
+  position: absolute;
+}
+
+.wrapper .clock .inner-circle::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.wrapper .clock::before {
+  content: "";
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px solid black;
   position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

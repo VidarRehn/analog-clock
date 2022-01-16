@@ -72,7 +72,8 @@ function moveHands(){
     let minute = today.getMinutes();
     minuteHand.style.transform = `rotate(${minute * 6}deg)`
     let second = today.getSeconds();
-    secondHand.style.transform = `rotate(${second * 6}deg)`;
+    secondHand.style.transform = `rotate(${(second * 6)}deg)`;
 }
 
 setInterval(moveHands, 1000);
+
